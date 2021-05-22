@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Media Upload</title>
+    </head>
+
+    <body>
+        <form method = "post" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {{form.as_p}}               <!--The form is provided from views.py method as context.-->
+            <button type="submit">Upload</button>
+        </form>
+    </body>
+
+</html>
