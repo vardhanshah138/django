@@ -7,6 +7,6 @@ Start the Virtual Enviornment :- source myenv/bin/activate
 install requirements :- pip install -r requirement.txt
 Change Directory to main project :- cd mysite
 Run the project :- python manage.py runserver
-In Chrome Browser visit :- http://127.0.0.1:8000/photos/upload
+In Chrome Browser visit :- http://127.0.0.1:8000/photos
 
 ```
