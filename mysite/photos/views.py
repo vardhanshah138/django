@@ -12,9 +12,10 @@ def upload_record(request):
 
         if form.is_valid():
             form.save()
-            filename = form.cleaned_data['record']
-            print(filename)
-            return render(request,'photos/success.html',{"filename" : filename})                       
+            filename_img = form.cleaned_data['image_upload']
+            filename_vid = form.cleaned_data['video_upload']
+            print(filename_vid)
+            return render(request,'photos/success.html',{"filename_img" : filename_img,"filename_vid" : filename_vid})                       
     else:
         form = photoForm()
     

@@ -6,9 +6,8 @@ from django.conf import settings
 
 urlpatterns = [
 
-    path('',views.success),
     path('success/',views.success),
-    path('upload',views.upload_record),
+    path('',views.upload_record),
 ]
 
 if settings.DEBUG:
